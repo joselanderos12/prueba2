@@ -27,7 +27,7 @@ export class PeliculasApiService {
 
   obtenerPeliculas(): Observable<Peliculas[]>{
     return this.http.get<Peliculas[]>
-    (' https://lightgrey-owl-901213.hostingersite.com/api/get_peliculas.php?limit=100')
+    (' https://lightgrey-owl-901213.hostingersite.com/api/get_peliculas.php?limit=100');
 
   
   }

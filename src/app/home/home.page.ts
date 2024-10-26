@@ -13,12 +13,9 @@ export class HomePage implements OnInit {
   constructor(private peliculasapiService : PeliculasApiService) {}
 
   ngOnInit(): void {
-     this.peliculasapiService.obtenerPeliculas().subscribe((PeliculasApiService))=>{
-     console.log("se traen las peliculas");
-}
-
-    
-    
+     this.peliculasapiService.obtenerPeliculas().subscribe((Peliculas)=>{
+      console.log("se muestran las peliculas");
+      this.items= Peliculas;
+     })
+    }
   }
-
-}
